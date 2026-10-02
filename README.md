@@ -69,7 +69,9 @@ Ghost **16 Windows ಗಟ್ಟಿಗೊಳಿಸುವ ಕಾರ್ಯಗಳು
 ### ಸುರಕ್ಷತಾ ಮೌಲ್ಯಮಾಪನ
 ```powershell
 # Ghost ಮಾಡ್ಯೂಲ್ ಲೋಡ್ ಮಾಡಿ
-IEX(Invoke-WebRequest 'https://raw.githubusercontent.com/jimrtyler/Ghost/main/Ghost.ps1')
+Invoke-WebRequest 'https://raw.githubusercontent.com/jimrtyler/Ghost/main/Ghost.ps1' -OutFile .\Ghost.ps1
+Get-Content .\Ghost.ps1
+. .\Ghost.ps1
 
 # ಪ್ರಸ್ತುತ ಸುರಕ್ಷತಾ ಭಂಗಿಯನ್ನು ಪರಿಶೀಲಿಸಿ
 Get-Ghost
@@ -97,7 +99,9 @@ Set-Ghost -SMBv1 -RDP -USBStorage -Intune
 
 ### ಆಯ್ಕೆ 1: ನೇರ ಡೌನ್‌ಲೋಡ್ (ಪರೀಕ್ಷೆ)
 ```powershell
-IEX(Invoke-WebRequest 'https://raw.githubusercontent.com/jimrtyler/Ghost/main/Ghost.ps1')
+Invoke-WebRequest 'https://raw.githubusercontent.com/jimrtyler/Ghost/main/Ghost.ps1' -OutFile .\Ghost.ps1
+Get-Content .\Ghost.ps1
+. .\Ghost.ps1
 ```
 
 ### ಆಯ್ಕೆ 2: ಮಾಡ್ಯೂಲ್ ಸ್ಥಾಪನೆ
